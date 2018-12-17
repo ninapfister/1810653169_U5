@@ -13,7 +13,7 @@ public abstract class Säugetier // abstrakte Klasse, abstract heißt es lassen 
 
     public abstract String printAll(); // abstrakte Methode,kann nicht implementiert werden, nur in abgeleiteter Klasse durch Methoden-Überlagerund implementiert, keinen Methodenrumpf, anstelle Rumpf und Klammern - Semikolon
 
-    // getter und setter
+    // getter und setter, brauch ich, könnte es auch mit this zugreifen aber dann nur in dieser Klasse
 
     public String getName()
     {
