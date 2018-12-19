@@ -3,11 +3,11 @@ public class Student extends Mensch2 // erbt von Mensch2
     private int matrikelnummer; // Atribute
     private String studiengang;
 
-    public Student(String vorname, String nachname, int alter, int matrikelnummer, String studiengang) // Konstruktor
+    public Student(String vorname, String nachname, int alter, int matrikelnummer, String studiengang) // Konstruktor Student
     {
         super(vorname, nachname, alter); // super weil es nicht in der selben Klasse ist
         this.matrikelnummer=matrikelnummer; // mit this greift man auf das Attribut zu, .matrikelnummer bestimmt diese genau, Wertzuweisung
-        this.studiengang=studiengang;
+        this.studiengang=studiengang; // neue Sachen dazu
     }
     // getter und setter, brauch ich, könnte es auch mit this zugreifen aber dann nur in dieser Klasse
 

@@ -4,7 +4,7 @@ public class Mensch2 {
     private int alter;
 
 
-    public Mensch2(String vorname, String nachname, int alter) //Konstruktor
+    public Mensch2(String vorname, String nachname, int alter) //Konstruktor Mensch2
     {
         this.vorname = vorname; // mit this greift man auf das Attribut zu, .vorname bestimmt es genau, Wertzuweisung
         this.nachname = nachname;
