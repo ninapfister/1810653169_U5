@@ -1,5 +1,7 @@
 public abstract class Säugetier // abstrakte Klasse, abstract heißt es lassen sich keine Objekte erzeugen, nur Strukturelement, besteht die Möglichkeit Methoden ohne Rumpf zu deklarieren
-{ // abstrakte KLassen als Superklassen eingesetzt, die abstrakte Methoden enthalten, die sspäter von abgeleiteten Klassen implementiert werden
+{ // abstrakte KLassen als Superklassen eingesetzt, die abstrakte Methoden enthalten, die später von abgeleiteten Klassen implementiert werden, extends brauch ich bei abstrakter Klasse
+    //beim erweitern muss man alles übernehmen was man hat, habe keine Instanzen also muss ich nachher implementieren
+
     // Interface - werden verwendet um Gemeinsamkeiten die in mehreren Klassen sind, in seperaten KLassen zu definieren, Schnittstelle - welche Mtehoden Klasse die implementiert verfügen muss
     // alle Klassen die Interface implementieren, müssen alle Methoden die Interface vorgibt enthalten, kann nichts ausgeben, ; statt KLammer, Contract also 2 Sachen und nur 1 Aufrufen
 
@@ -15,7 +17,7 @@ public abstract class Säugetier // abstrakte Klasse, abstract heißt es lassen 
         this.geschlecht=geschlecht;
     }
 
-    public abstract String printAll(); // abstrakte Methode,kann nicht implementiert werden, nur in abgeleiteter Klasse (Vererbung) durch Methoden-Überlagerund implementiert, keinen Methodenrumpf, anstelle Rumpf und Klammern - Semikolon
+    public abstract String printAll(); // abstrakte Methode, hat keinen Körper muss in abgeleiteter Klasse implementiert werden,durch Methoden-Überlagerund implementiert, keinen Methodenrumpf
     // können nicht aufgerufen werden
 
     // getter und setter, brauch ich, könnte es auch mit this zugreifen aber dann nur in dieser Klasse

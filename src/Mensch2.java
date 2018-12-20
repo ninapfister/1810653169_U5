@@ -42,7 +42,7 @@ public class Mensch2 {
             this.alter = alter;
         }
 
-        public void Status () // Methode
+        public void status () // Methode
         {
             System.out.println(getVorname() + " " + getNachname() + " ist ein Mensch und ist " + getAlter() + " Jahre alt"); // Ausgabe
         }

@@ -10,11 +10,11 @@ public class Aufruf
         // Aufgabe 2
 
         Mensch2 b = new Mensch2("Nina", "Pfister", 21); // neue Instanz vom Typ Mensch mit Werten
-        b.Status(); // Methode Status, mit b. greife ich auf Mensch b zu
+        b.status(); // Methode Status, mit b. greife ich auf Mensch b zu
         Student c = new Student("Nina", "Pfister", 21, 1810653169, "Web Business & Technology");
-        c.Status(); // Methode Status, mit c. greife ich auf Student c zu
-        // gleiche Methode in zwei verschiedenen Kontexten, Polymorphismus
-
+        c.status(); // Methode Status, mit c. greife ich auf Student c zu
+        // gleiche Methode in zwei verschiedenen Kontexten, Polymorphismus, wenn zwei Klassen selben Methodennamen verwenden, Mensch2 Superklasse, Student erbt von Student, erbt auch Status Methode, dann überschreibe ich
+        // kann zwei verschiedene Sachen mit der gleichen Methode ausgeben, jede Klasse die erbt kann die Status Methode überschreiben und für sich anpasssen
 
         //Aufgabe 4
         String d = JOptionPane.showInputDialog("Gib etwas ein!"); // 3 Variablen vom Typ String mit Inhalten befüllen, InputDialog
@@ -22,7 +22,8 @@ public class Aufruf
         String f = JOptionPane.showInputDialog("Gib etwas ein!");
 
         if (d.equals(e)) // mit Methode equals werden Stings verglichen, == vergleicht Referenzen (Verweis auf Objekt) keine Werte, if weil man vergleichen will, wenn, wenn dann, wenn dann, dann
-        {
+        { // könnten unterschiedliche Werte haben aber gleich Referenz, equals prüft inhalt - == prüft Referenz z.B. ob a = b, ob sie auf gleichen Speicherbereich zeigen
+
             System.out.println("Zwei Variablen wurden gleich befüllt!"); //soll ausgeben das zwei Variablen gleich befüllt wurden
         }
         else if (d.equals(f)) // anderer Vergleich

@@ -31,8 +31,8 @@ public class Student extends Mensch2 // erbt von Mensch2
         this.studiengang = studiengang;
     }
 
-    @Override //überschreibt abstrakte Klasse
-    public void Status() // Methode
+    @Override //überschreibt die Methode
+    public void status() // Methode
     {
         System.out.println(getVorname() + " " + getNachname() + " ist ein Student und ist " + getAlter() + " Jahre alt und studiert "
                 + getStudiengang() + ". Die Martrikelnummer lautet: " + getMatrikelnummer()); //Ausgabe
